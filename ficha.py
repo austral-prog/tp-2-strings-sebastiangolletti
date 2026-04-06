@@ -25,3 +25,67 @@ def ficha():
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
     pass
+
+    frase = "FICHA DEl ALUMNO"
+    print("========================")
+    print(f"\t{frase.title().upper()}")
+    print("========================")
+
+    nombre = input("ingrese su nombre y apellido: ")
+
+    print(f"Nombre: {nombre.title()}")
+    espacio = nombre.find(" ")
+
+    nombr = nombre[:espacio]
+    apellido = nombre[espacio+ 1:]
+    email = input("ingrese su email: ")
+    print(f"Email: {email}")
+    cantidad = len(nombre)
+    print(f"Caracteres en nombre: {cantidad}")
+
+    print(f"Iniciales: {nombre[0].upper()}{nombre[espacio+1].upper()}")
+
+    print(f"Usuario: {apellido.lower()}.{nombr.lower()}")
+
+    T = "True"
+    F = "False"
+
+    if "@" in email:
+        print(f"Email valido: {T}")
+    else:
+        print(f"Email valido: {F}")
+
+    A = email.find("@")
+    B = email[A + 1:]
+    print(f"Dominio: {B.lower()}")
+
+
+    print(f"Nombre para archivo: {nombre.replace(" ","_").title()}")
+
+    print(f"cantidad de a: {nombre.lower().count("a")}")
+
+    print(f"Codigo secreto: {nombre[::-1].upper()}")
+
+    nota1 = float(input("ingrese nota1: "))
+    nota2 = float(input("ingrese nota2: "))
+    nota3 = float(input("ingrese nota3: "))
+
+    print(f"Nota 1: {nota1}")
+    print(f"Nota 2: {nota2}")
+
+    print(f"Nota 3: {nota3}")
+
+
+    print(f"Suma: {(nota1 + nota2 + nota3):.0f}")
+    print(f"Promedio: {(nota1 + nota2 + nota3) / 3}")
+    print(f"Promedio entero: {int((nota1 + nota2 + nota3) / 3)}")
+
+    print("========================")
+
+
+
+
+
+ficha()
+
+
