@@ -3,14 +3,14 @@ def string_methods():
     title, find, replace, count, operador in, slicing con paso, reverso,
     f-strings y strings multilínea.
     """
-    nombre = " Grace Hopper "
+    nombre = "   Grace Hopper   "
     frase = "Python es un gran lenguaje de programacion"
     multilinea = """Linea 1
     Linea 2
     Linea 3"""
 
-    var= "true"
-    nya = "false"
+    var= "True"
+    nya = "False"
 
 
 
@@ -24,23 +24,21 @@ def string_methods():
     print(f"Replace: {frase.replace("programacion", "desarrollo")}")
     print(f"Count: {frase.count("a")}")
     if "Python" in frase:
-        print(f"Contiene python: {var}")
+        print(f"Contiene Python: {var}")
     else:
-        print(f"Contiene python: {nya}")
+        print(f"Contiene Python: {nya}")
 
     if "java" in frase:
-        print(f"Contiene java: {var}")
+        print(f"Contiene Java: {var}")
     else:
-        print(f"Contiene java: {nya}")
+        print(f"Contiene Java: {nya}")
 
     print(f"Slice: {frase[0:6]}")
     print(f"Paso: {frase[0:6:2]}")
-    print(f"Inverso: {frase[6::-1]}")
-    print(f"Formato:{nombre}sabe {frase[0:6]}")
-    print("""
-linea 1
-linea 2
-linea 3
-    """)
+    print(f"Reverso: {frase[5::-1]}")
+    print(f"Formato: {nombre.strip()} sabe {frase[:6]}")
+    print("Linea 1")
+    print("Linea 2")
+    print("Linea 3")
 
-string_methods()
+

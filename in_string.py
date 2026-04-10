@@ -3,43 +3,43 @@ def check_vowels():
     sin distinguir mayúsculas de minúsculas.
     """
     pass
-    nombre = input("Ingrese nombre: ")
+    nombre = input("Ingrese nombre: ").lower()
 
 
-    var = "true"
-    nya = "false"
+    var = "True"
+    nya = "False"
 
 
 
     if "a" in nombre:
-        print(f"contiene a: {var}")
+        print(f"Contiene a: {var}")
 
     else:
-        print(f"contiene a: {nya}")
+        print(f"Contiene a: {nya}")
 
     if "e" in nombre:
-        print(f"contiene e: {var}")
+        print(f"Contiene e: {var}")
 
     else:
-        print(f"contiene e: {nya}")
+        print(f"Contiene e: {nya}")
 
     if "i" in nombre:
-        print(f"contiene e: {var}")
+        print(f"Contiene i: {var}")
 
     else:
-        print(f"contiene e: {nya}")
+        print(f"Contiene i: {nya}")
 
     if "o" in nombre:
-        print(f"contiene e: {var}")
+        print(f"Contiene o: {var}")
 
     else:
-        print(f"contiene e: {nya}")
+        print(f"Contiene o: {nya}")
 
     if "u" in nombre:
-        print(f"contiene e: {var}")
+        print(f"Contiene u: {var}")
 
     else:
-        print(f"contiene e: {nya}")
+        print(f"Contiene u: {nya}")
 
 
 

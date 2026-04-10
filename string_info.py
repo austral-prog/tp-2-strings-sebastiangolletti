@@ -6,7 +6,7 @@ def string_info():
     longitud = len(palabra)
 
     print(f"Palabra: {palabra}")
-    print(f"Longitud: {longitud})")
+    print(f"Longitud: {longitud}")
     print(f"Primera letra: {palabra[0]}")
     print(f"Ultima letra: {palabra[-1]}")
     print(f"Repetida: {palabra*3}")
